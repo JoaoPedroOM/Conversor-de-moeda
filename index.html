@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convert Money</title>
+
+  <script src="./main.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Conversor de moeda</h1>
+    </header>
+
+    <main>
+      <label>
+        Converter <span class="negrito">de</span> 
+        <select>
+          <option>
+            R$ Real brasileiro
+          </option>
+        </select>
+      </label>
+
+      <label>
+        Converter <span class="negrito">para</span> 
+        <select id="currencySelect">
+          <option>US$ Dólar americano</option>
+          <option>€ Euro</option>
+          <option>₿ Bitcoin</option>
+        </select>
+      </label>
+
+      <label>
+        <span class="negrito">Valor</span>
+       <input id="input-money" placeholder="R$ 10.000">
+      </label>
+
+      <button type="button">Converter</button>
+
+      <section class="convert">
+        <div class="convert-output">
+          <img src="./img/brasil.svg" alt="bandeira do Brasil">
+          <p class="convert-output-country">Real</p>
+          <p id="realValue" class="convert-output-value">R$ 00</p>
+        </div>
+
+        <img src="./img/arrow.svg" alt="seta para baixo">
+
+        <div class="convert-output">
+          <img id="currency-image" src="./img/estados-unidos.svg" alt="bandeira-pais-conversão">
+          <p id="currency-name" class="convert-output-country">Dólar americano</p>
+          <p id="convertValue" class="convert-output-value">US$ 00</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
